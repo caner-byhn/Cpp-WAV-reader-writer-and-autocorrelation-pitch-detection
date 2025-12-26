@@ -54,7 +54,7 @@ float autocorrelation(const std::vector<float>& samples, uint32_t sampleRate) {
 
 
 //Use C style ring buffer for processing real time samples.
-//Ring buffer is faster than C++ dynamic containers and more compatible with embedded hardware.
+//Ring buffer is faster than C++ dynamic containers and less memory heavy with embedded hardware.
 /*
 constexpr int N = 9;
 float history[N];
